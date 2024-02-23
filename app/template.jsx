@@ -11,7 +11,7 @@ const variants = {
   enter: { opacity: 1 },
 };
 
-const template = ({ children }) => {s
+const template = ({ children }) => {
   const completion = useScrollProgress();
   return (
     <>

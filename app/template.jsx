@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 //hooks
-import useScrollProgress from "@/hooks/UseScrollProgress";
+import useScrollProgress from "@/hooks/useScrollProgress";
 
 //variants
 const variants = {
@@ -11,7 +11,7 @@ const variants = {
   enter: { opacity: 1 },
 };
 
-const template = ({ children }) => {
+const template = ({ children }) => {s
   const completion = useScrollProgress();
   return (
     <>

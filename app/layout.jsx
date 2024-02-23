@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
             finishLoading={finishLoading}
           />
         ) : (
-          <ThemeProvider attribute="class" defaultTheme="light">
+          <ThemeProvider attribute="class" defaultTheme="dark">
             <Header />
             {children}
             <Footer />

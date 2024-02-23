@@ -20,7 +20,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Hero = () => {
   const [typeEffect] = useTypewriter({
-    words: ["Full-Stack Dev", "UI/UX Designer", "Mathematician"],
+    words: ["Frontend Developer", "UI/UX Designer", "Mathematician"],
     loop: {},
     cursor: "|",
     typeSpeed: 100,
@@ -67,9 +67,8 @@ const Hero = () => {
           <div className="hidden xl:flex relative">
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2 ">
               <Devlmg
-                containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
+                containerStyles=" w-[510px] h-[462px] bg-no-repeat relative bg-bottom rounded-full overflow-hidden"
                 imgSrc="/hero/developer.png"
-                className="w-[200px] h-[auto]"
               />
             </div>
           </div>

@@ -1,14 +1,17 @@
 import React from "react";
 import Image from "next/image";
+
 const Devlmg = ({ containerStyles, imgSrc }) => {
   return (
-    <div className={`${containerStyles}`}>
+    <div className={`${containerStyles} relative `}>
       <Image
         src={imgSrc}
-        fill
-        priority
+        width={380}
+        height={110} // Set the height according to your requirements
         alt=""
-        className={`w-[200px] h-[auto] `}
+        priority
+        className=" mt-0 mb-9 pt-0 "
+       
       />
     </div>
   );

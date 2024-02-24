@@ -10,6 +10,9 @@ import {
   RiTeamFill,
   RiTodoFill,
   RiArrowDownSLine,
+  RiCheckDoubleFill,
+  RiComputerFill,
+  RiDatabaseFill,
 } from "react-icons/ri";
 
 //components
@@ -65,6 +68,21 @@ const Hero = () => {
           </div>
           {/* image */}
           <div className="hidden xl:flex relative">
+            {/* badeg */}
+            <Badge
+              containerStyles="absolute top-[24%] -left-[13rem]"
+              icon={<RiBriefcase4Fill />}
+              endCountNum={3}
+              badgeText="Years Experience"
+            />
+            {/* badge 2 */}
+            <Badge
+              containerStyles="absolute top-[80%] -left-[34rem]"
+              icon={<RiDatabaseFill />}
+              endCountNum={7}
+              endCountText='k'
+              badgeText="Finished Projects"
+            />
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2 ">
               <Devlmg
                 containerStyles=" w-[510px] h-[462px] bg-no-repeat relative bg-bottom rounded-full overflow-hidden"

@@ -22,25 +22,11 @@ export default function SplashScreen({ finishLoading, className }) {
         }
       );
 
-      // Animation for the #logop element
-      // timeline.fromTo(
-      //   "#logop",
-      //   { y: 50, opacity: 0 },
-      //   {
-      //     y: 0,
-      //     opacity: 1,
-      //     duration: 3.3,
-      //     delay: 5,
-      //   },
-      //   "<" // The "<" indicates that the second animation should start at the same time as the first
-      // );
-
       // Drawing animation for the path
       timeline.to(logoPath, {
         strokeDashoffset: 4,
         duration: 4,
         scale: 1,
-        
       });
 
       // Animation for the #logop element

@@ -83,19 +83,62 @@ const skillData = [
         name: "HTML, CSS",
       },
       {
-        name: "HTML, CSS",
+        name: "JavaScript",
       },
       {
-        name: "HTML, CSS",
+        name: "React.Js",
       },
       {
-        name: "HTML, CSS",
+        name: "Tailwind",
+      },
+      {
+        name: "Next.js",
+      },
+      {
+        name: "Typescript",
+      },
+      {
+        name: "Node.Js",
+      },
+    ],
+  },
+  {
+    title: "Software",
+    data: [
+      {
+        imgPath: '/about/vscode.svg',
+      },
+      {
+        imgPath: '/about/wordpress.svg',
+      },
+      {
+        imgPath: '/about/photoshop.svg',
+      },
+      {
+        imgPath: "/about/xd.svg",
+      },
+      {
+        imgPath: '/about/figma.svg',
       },
     ],
   },
 ];
+
+
 const About = () => {
-  return <div>About</div>;
+  const getData = (arr, title) => {
+    return arr.find((item) => item.title === title );
+  };
+
+  return (
+    <section className="xl:h-[860px] pb-12 xl:py-24">
+      <div className="container mx-auto">
+        <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
+          About me
+        </h2>
+      </div>
+    </section>
+  ) 
 };
 
 export default About;

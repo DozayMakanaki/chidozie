@@ -42,7 +42,7 @@ const Hero = () => {
               <Cursor cursorColor="rgb(91, 201, 44)" />
             </div>
             <h1 className="h1 mb-4">
-              <span className="font-light">Hello! I am </span>
+              <span className="font-light dark:text-gray-400">Hello! I am </span>
               <br /> Dozie <span className="text-primary">Umeodinka</span>
             </h1>
 

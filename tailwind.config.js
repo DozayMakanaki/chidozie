@@ -80,6 +80,8 @@ module.exports = {
         hero_shape: 'url(../public/hero/shape-1.svg)',
         hero_shape2_light: 'url(../public/hero/shape-2-light.svg)',
         hero_shape2_dark: 'url(../public/hero/shape-2-dark.svg)',
+        dots_light: 'url(../public/dots-light.svg)',
+        dots_dark: 'url(../public/dots-dark.svg)',
       }
       
     },

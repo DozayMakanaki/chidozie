@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
+import { motion } from "framer-motion";
 
 import {
   RiBriefcase4Fill,

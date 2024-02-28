@@ -137,14 +137,20 @@ const About = () => {
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About me
         </h2>
-        <div className="flex flex-col xl:flex-row"> 
+        <div className="flex flex-col xl:flex-row">
           {/*  lottie animation */}
-          <div className="">
+          <div className=" hidden xl:flex flex-1 relative">
             <Anime />
+            {/* <iframe
+              src="https://my.spline.design/untitled-2618df90d4d8efc66aa546f5bb98f5bd/"
+              frameborder="0"
+              width="100%"
+              height="100%"
+            ></iframe> */}
           </div>
-          <div className="flex-1 items-center justify-center ">
+          <div className="flex-1 ">
             <Tabs defaultValue="info">
-              <TabsList className=' grid xl:grid-cols-3 xl:max-w=[520px]'>
+              <TabsList className=" grid xl:grid-cols-3 xl:max-w=[520px] ">
                 <TabsTrigger value="info">Info</TabsTrigger>
                 <TabsTrigger value="credentials">Credentials</TabsTrigger>
                 <TabsTrigger value="proficiency">Proficiency</TabsTrigger>

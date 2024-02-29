@@ -33,48 +33,48 @@ const infoData = [
   },
 ];
 
-const qualificationData = [
-  {
-    title: "education",
-    data: [
-      {
-        university: "Example University",
-        qualification: "B.sc Mathematics",
-        years: "2016 - 2020",
-      },
-      {
-        university: "Example University",
-        qualification: "B.sc Mathematics",
-        years: "2016 - 2020",
-      },
-      {
-        university: "Example University",
-        qualification: "B.sc Mathematics",
-        years: "2016 - 2020",
-      },
-    ],
-  },
-  {
-    title: "experience",
-    data: [
-      {
-        company: "Abc Inc.",
-        qualification: "Software",
-        years: "2016",
-      },
-      {
-        company: "Abc Inc.",
-        qualification: "Software",
-        years: "2016",
-      },
-      {
-        company: "Abc Inc.",
-        qualification: "Software",
-        years: "2016",
-      },
-    ],
-  },
-];
+// const qualificationData = [
+//   {
+//     title: "Dev skills",
+//     data: [
+//       {
+//         university: "Example University",
+//         qualification: "B.sc Mathematics",
+//         years: "2016 - 2020",
+//       },
+//       {
+//         university: "Example University",
+//         qualification: "B.sc Mathematics",
+//         years: "2016 - 2020",
+//       },
+//       {
+//         university: "Example University",
+//         qualification: "B.sc Mathematics",
+//         years: "2016 - 2020",
+//       },
+//     ],
+//   },
+//   {
+//     title: "experience",
+//     data: [
+//       {
+//         company: "Abc Inc.",
+//         qualification: "Software",
+//         years: "2016",
+//       },
+//       {
+//         company: "Abc Inc.",
+//         qualification: "Software",
+//         years: "2016",
+//       },
+//       {
+//         company: "Abc Inc.",
+//         qualification: "Software",
+//         years: "2016",
+//       },
+//     ],
+//   },
+// ];
 
 const skillData = [
   {
@@ -150,17 +150,88 @@ const About = () => {
           </div>
           <div className="flex-1 ">
             <Tabs defaultValue="info">
-              <TabsList className=" grid xl:grid-cols-3 xl:max-w=[520px] ">
-                <TabsTrigger value="info">Info</TabsTrigger>
-                <TabsTrigger value="credentials">Credentials</TabsTrigger>
-                <TabsTrigger value="proficiency">Proficiency</TabsTrigger>
+              <TabsList className=" grid xl:grid-cols-2 xl:max-w-[420px] ">
+                <TabsTrigger className='w-[162px] xl:w-auto' value="info">Info</TabsTrigger>
+                {/* <TabsTrigger className='w-[162px] xl:w-auto' value="credentials">Credentials</TabsTrigger> */}
+                <TabsTrigger className='w-[162px] xl:w-auto' value="proficiency">Proficiency</TabsTrigger>
               </TabsList>
 
               {/* tabs content */}
               <div className="text-lg mt-12 xl:mt-8">
-                <TabsContent value="info">Info</TabsContent>
-                <TabsContent value="credentials">Credentials</TabsContent>
-                <TabsContent value="proficiency">Proficiency</TabsContent>
+                <TabsContent value="info">
+                  <div className="text-center xl:text-left">
+                    <h3 className="h3 mb-4">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                    </h3>
+                    <p className="subtitle max-w-xl mx-auto xl:mx-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Commodi quisquam eligendi perferendis. Obcaecati excepturi at,
+                      .</p>
+                      {/* icons */}
+                      <div className="grid xl:grid-cols-2 gap-4 mb-12">
+                        {infoData.map((item, index) => {
+                          return (
+                            <div className="flex items-center gap-x-4 mx-auto xl:mx-0" key={index}>
+                              <div className="text-primary">{item.icon}</div>
+                              <div>{item.text}</div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                      {/* languages */}
+                      <div className="flex flex-col gap-y-2">
+                        <div className="text-primary">Hobbies</div>
+                        <div className="border-b border-border"></div>
+                        <div>Sports, Music, Learning</div>
+                      </div>
+                  </div>
+                </TabsContent>
+
+                
+                {/* <TabsContent value="credentials">
+                  <div>
+                    <h3 className="h3 nb8 text-center xl:text-left">Tech Skills
+                    </h3>
+                  </div>
+                </TabsContent> */}
+                
+                <TabsContent value="proficiency">
+                  <div className="text-center xl:text-left">
+                    <h3 className="h3 mb-8">My Skills</h3>
+                    <div className="mb-16">
+                      <h4 className="text-xl font-semibold mb-2">
+                        Languages
+                      </h4>
+                      <div className="border-b border-border mb4"></div>
+
+                      {/* skiill list */}
+                      <div>
+                        {getData(skillData, 'skills').data.map((item, index) =>{
+                          const {name} = item;
+                          return <div className="w-2/4 text-center xl:text-left mx-auto xl:mx-0" key={index}>
+                            <div className="font-medium">{name}</div>
+                          </div>
+                        })}
+                      </div>
+                    </div>
+                    {/* tools */}
+                    <div>
+                      <h4 className="text-xl font-semibold mb-2 xl:text-left">Tools</h4>
+                      <div className="border-b border-border mb-4"></div>
+
+                      {/* tool list */}
+                      <div className="flex gap-x-8 justify-center xl:justify-start">
+                        {getData(skillData, 'Software').data.map((item, index)=> {
+                          const {imgPath} = item;
+                          return (
+                            <div key={index}>
+                              <Image src={imgPath} width={40} height={40} alt="" priority />
+                            </div>
+                          );
+                        }) }
+                      </div>
+                    </div>
+                  </div>
+                </TabsContent>
               </div>
             </Tabs>
           </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { Montserrat } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import { useEffect, useState } from "react";
 import Header from "@/components/Header";
@@ -9,7 +9,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import SplashScreen from "@/components/SplashScreen";
 import { usePathname } from "next/navigation";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const outfit = Outfit({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={montserrat.className}>
+      <body className={outfit.className}>
         {isLoading && isHome ? (
           <SplashScreen
             className="bg-dark-blue"

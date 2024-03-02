@@ -78,48 +78,83 @@ const infoData = [
 
 const skillData = [
   {
-    title: "skills",
+    title: "frontend",
     data: [
       {
-        name: "HTML, CSS",
+        name: "HTML",
+        imgPath: "/stack/html.svg",
       },
       {
-        name: "JavaScript",
+        name: "CSS",
+        imgPath: "/stack/css.svg",
       },
       {
-        name: "React.Js",
+        name: "JAVASCRIPT",
+        imgPath: "/stack/javascript.svg",
       },
       {
-        name: "Tailwind",
+        name: "REACT.JS",
+        imgPath: "/stack/react.svg",
       },
       {
         name: "Next.js",
+        imgPath: "/stack/nextjs.svg",
       },
       {
         name: "Typescript",
+        imgPath: "/stack/typescript.svg",
       },
       {
-        name: "Node.Js",
+        name: "TAILWIND",
+        imgPath: "/stack/tailwind.svg",
       },
     ],
   },
+
+  {
+    title: "backend",
+    data: [
+      {
+        stack: "NODE.JS",
+        imgPath: "/stack/nodejs.svg",
+      },
+      {
+        stack: "EXPRESS.JS",
+        imgPath: "/stack/express.svg",
+      },
+      {
+        stack: "PHP",
+        imgPath: "/stack/php.svg",
+      },
+      {
+        stack: "LARAVEL",
+        imgPath: "/stack/laravel.svg",
+      },
+      {
+        stack: "MONGO.DB",
+        imgPath: "/stack/mongodb.svg",
+      },
+    ],
+  },
+
   {
     title: "Software",
     data: [
       {
-        imgPath: '/about/vscode.svg',
+        software: "VS CODE",
+        imgPath: "/stack/vscode.svg",
       },
       {
-        imgPath: '/about/wordpress.svg',
+        software: "PHOTOSHOP",
+        imgPath: "/stack/photoshop.svg",
       },
       {
-        imgPath: '/about/photoshop.svg',
+        software: "XD",
+        imgPath: "/stack/xd.svg",
       },
       {
-        imgPath: "/about/xd.svg",
-      },
-      {
-        imgPath: '/about/figma.svg',
+        software: "FIGMA",
+        imgPath: "/stack/figma.svg",
       },
     ],
   },
@@ -150,10 +185,19 @@ const About = () => {
           </div>
           <div className="flex-1 ">
             <Tabs defaultValue="info">
-              <TabsList className=" grid xl:grid-cols-2 xl:max-w-[420px] ">
-                <TabsTrigger className='w-[162px] xl:w-auto' value="info">Info</TabsTrigger>
-                {/* <TabsTrigger className='w-[162px] xl:w-auto' value="credentials">Credentials</TabsTrigger> */}
-                <TabsTrigger className='w-[162px] xl:w-auto' value="proficiency">Proficiency</TabsTrigger>
+              <TabsList className=" grid xl:grid-cols-4 xl:max-w-[540px] ">
+                <TabsTrigger className="w-[162px] xl:w-auto" value="info">
+                  Info
+                </TabsTrigger>
+                <TabsTrigger className="w-[162px] xl:w-auto" value="Frontend">
+                  Frontend
+                </TabsTrigger>
+                <TabsTrigger className="w-[162px] xl:w-auto" value="Backend">
+                  Backend
+                </TabsTrigger>
+                <TabsTrigger className="w-[162px] xl:w-auto" value="Tools">
+                  Software
+                </TabsTrigger>
               </TabsList>
 
               {/* tabs content */}
@@ -161,73 +205,138 @@ const About = () => {
                 <TabsContent value="info">
                   <div className="text-center xl:text-left">
                     <h3 className="h3 mb-4">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Saepe
                     </h3>
-                    <p className="subtitle max-w-xl mx-auto xl:mx-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                      Commodi quisquam eligendi perferendis. Obcaecati excepturi at,
-                      .</p>
-                      {/* icons */}
-                      <div className="grid xl:grid-cols-2 gap-4 mb-12">
-                        {infoData.map((item, index) => {
-                          return (
-                            <div className="flex items-center gap-x-4 mx-auto xl:mx-0" key={index}>
-                              <div className="text-primary">{item.icon}</div>
-                              <div>{item.text}</div>
-                            </div>
-                          );
-                        })}
-                      </div>
-                      {/* languages */}
-                      <div className="flex flex-col gap-y-2">
-                        <div className="text-primary">Hobbies</div>
-                        <div className="border-b border-border"></div>
-                        <div>Sports, Music, Learning</div>
-                      </div>
+                    <p className="subtitle max-w-xl mx-auto xl:mx-0">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Commodi quisquam eligendi perferendis. Obcaecati excepturi
+                      at, .
+                    </p>
+                    {/* icons */}
+                    <div className="grid xl:grid-cols-2 gap-4 mb-12">
+                      {infoData.map((item, index) => {
+                        return (
+                          <div
+                            className="flex items-center gap-x-4 mx-auto xl:mx-0"
+                            key={index}
+                          >
+                            <div className="text-primary">{item.icon}</div>
+                            <div>{item.text}</div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                    {/* languages */}
+                    <div className="flex flex-col gap-y-2">
+                      <div className="text-primary">Hobbies</div>
+                      <div className="border-b border-border"></div>
+                      <div>Sports, Music, Learning</div>
+                    </div>
                   </div>
                 </TabsContent>
 
-                
-                {/* <TabsContent value="credentials">
+                <TabsContent value="Frontend">
                   <div>
-                    <h3 className="h3 nb8 text-center xl:text-left">Tech Skills
+                    <h3 className="h3 nb8 text-center xl:text-left">
+                      Frontend
                     </h3>
-                  </div>
-                </TabsContent> */}
-                
-                <TabsContent value="proficiency">
-                  <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-8">My Skills</h3>
+                    {/* frontend */}
                     <div className="mb-16">
-                      <h4 className="text-xl font-semibold mb-2">
-                        Languages
-                      </h4>
                       <div className="border-b border-border mb4"></div>
 
-                      {/* skiill list */}
-                      <div>
-                        {getData(skillData, 'skills').data.map((item, index) =>{
-                          const {name} = item;
-                          return <div className="w-2/4 text-center xl:text-left mx-auto xl:mx-0" key={index}>
-                            <div className="font-medium">{name}</div>
-                          </div>
-                        })}
+                      {/* frontend  list */}
+                      <div className="grid xl:grid-cols-4 mb-11">
+                        {getData(skillData, "frontend").data.map(
+                          (item, index) => {
+                            const { name, imgPath } = item;
+                            return (
+                              <div
+                                className="w-2/4 text-center xl:text-center mx-auto xl:mx-0 flex items-center p-2"
+                                key={index}
+                              >
+                                <div className="p-2">{name}</div>
+                                <Image
+                                  src={imgPath}
+                                  width={20}
+                                  height={20}
+                                  alt=""
+                                  priority
+                                />
+                              </div>
+                            );
+                          }
+                        )}
                       </div>
                     </div>
+                  </div>
+                </TabsContent>
+
+                <TabsContent value="Backend">
+                  <div className="text-center xl:text-left">
+                    <h3 className="h3 mb-8">Backend</h3>
+                    {/* frontend */}
+                    <div className="mb-16">
+                      <div className="border-b border-border mb4"></div>
+
+                      {/* frontend  list */}
+                      <div className="grid xl:grid-cols-4 mb-11">
+                        {getData(skillData, "backend").data.map(
+                          (item, index) => {
+                            const { stack, imgPath } = item;
+                            return (
+                              <div
+                                className="w-2/4 text-center xl:text-center mx-auto xl:mx-0 flex items-center p-2"
+                                key={index}
+                              >
+                                <div className="p-2">{stack}</div>
+                                <Image
+                                  src={imgPath}
+                                  width={20}
+                                  height={20}
+                                  alt=""
+                                  priority
+                                />
+                              </div>
+                            );
+                          }
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </TabsContent>
+
+                {/* TOOLS */}
+                <TabsContent value="Tools">
+                  <div className="text-center xl:text-left">
+                    <h3 className="h3 mb-8">Softwares</h3>
+
                     {/* tools */}
                     <div>
-                      <h4 className="text-xl font-semibold mb-2 xl:text-left">Tools</h4>
                       <div className="border-b border-border mb-4"></div>
 
-                      {/* tool list */}
-                      <div className="flex gap-x-8 justify-center xl:justify-start">
-                        {getData(skillData, 'Software').data.map((item, index)=> {
-                          const {imgPath} = item;
-                          return (
-                            <div key={index}>
-                              <Image src={imgPath} width={40} height={40} alt="" priority />
-                            </div>
-                          );
-                        }) }
+                      {/* frontend  list */}
+                      <div className="grid xl:grid-cols-4 mb-11">
+                        {getData(skillData, "Software").data.map(
+                          (item, index) => {
+                            const { software, imgPath } = item;
+                            return (
+                              <div
+                                className="w-2/4 text-center xl:text-center mx-auto xl:mx-0 flex items-center p-2"
+                                key={index}
+                              >
+                                <div className="p-2">{software}</div>
+                                <Image
+                                  src={imgPath}
+                                  width={20}
+                                  height={20}
+                                  alt=""
+                                  priority
+                                />
+                              </div>
+                            );
+                          }
+                        )}
                       </div>
                     </div>
                   </div>

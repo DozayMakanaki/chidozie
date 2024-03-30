@@ -1,8 +1,10 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Devlmg from "./DevImg";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
+import {motion } from "framer-motion";
 import {
   User2,
   MailIcon,
@@ -13,6 +15,21 @@ import {
   HomeIcon,
 } from "lucide-react";
 import Anime from "./Anime";
+
+
+
+const containerVars = {
+  initial: {
+    transition: {
+      staggerChildren: 0.5,
+    }
+  },
+  open:{
+    transition:{
+      staggerChildren:0.5,
+    }
+  }
+}
 
 const infoData = [
   {
@@ -33,48 +50,6 @@ const infoData = [
   },
 ];
 
-// const qualificationData = [
-//   {
-//     title: "Dev skills",
-//     data: [
-//       {
-//         university: "Example University",
-//         qualification: "B.sc Mathematics",
-//         years: "2016 - 2020",
-//       },
-//       {
-//         university: "Example University",
-//         qualification: "B.sc Mathematics",
-//         years: "2016 - 2020",
-//       },
-//       {
-//         university: "Example University",
-//         qualification: "B.sc Mathematics",
-//         years: "2016 - 2020",
-//       },
-//     ],
-//   },
-//   {
-//     title: "experience",
-//     data: [
-//       {
-//         company: "Abc Inc.",
-//         qualification: "Software",
-//         years: "2016",
-//       },
-//       {
-//         company: "Abc Inc.",
-//         qualification: "Software",
-//         years: "2016",
-//       },
-//       {
-//         company: "Abc Inc.",
-//         qualification: "Software",
-//         years: "2016",
-//       },
-//     ],
-//   },
-// ];
 
 const skillData = [
   {
@@ -167,7 +142,7 @@ const About = () => {
   };
 
   return (
-    <section className="xl:h-[860px] pb-12 xl:py-24">
+    <section className="snap-start xl:h-[860px] pb-12 xl:py-24">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About me
@@ -214,19 +189,27 @@ const About = () => {
                       at, .
                     </p>
                     {/* icons */}
-                    <div className="grid xl:grid-cols-2 gap-4 mb-12">
-                      {infoData.map((item, index) => {
-                        return (
-                          <div
-                            className="flex items-center gap-x-4 mx-auto xl:mx-0"
-                            key={index}
-                          >
-                            <div className="text-primary">{item.icon}</div>
-                            <div>{item.text}</div>
-                          </div>
-                        );
-                      })}
-                    </div>
+                    <motion.div
+                      // variants={fadeInAnimationVariants}
+                      initial="initial"
+                      animate="animate"
+                      whileInView="animate"
+                      viewport={{
+                        once: true,
+                      }}
+                      className="grid xl:grid-cols-2 gap-4 mb-12"
+                    >
+                      {infoData.map((item, index) => (
+                        <motion.div
+                          key={index}
+                          variants={containerVars}
+                          className="flex items-center gap-x-4 mx-auto xl:mx-0"
+                        >
+                          <div className="text-primary">{item.icon}</div>
+                          <div>{item.text}</div>
+                        </motion.div>
+                      ))}
+                    </motion.div>
                     {/* languages */}
                     <div className="flex flex-col gap-y-2">
                       <div className="text-primary">Hobbies</div>

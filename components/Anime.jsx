@@ -1,20 +1,25 @@
-"use client";
-
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Lottie from "lottie-react";
 import animationData from "@/app/animation.json";
 
 const Anime = () => {
+  const [isAnimationLoaded, setIsAnimationLoaded] = useState(false);
+
+  useEffect(() => {
+    const delayTimeout = setTimeout(() => {
+      setIsAnimationLoaded(true);
+    }, 4000); // Adjust the delay time (in milliseconds) as needed
+
+    return () => clearTimeout(delayTimeout);
+  }, []);
+
   return (
     <div className="w-[350px]">
-      <Lottie animationData={animationData}  />
+      {isAnimationLoaded && (
+        <Lottie animationData={animationData} loop={false} />
+      )}
     </div>
   );
 };
 
 export default Anime;
-
-{/* <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.54/build/spline-viewer.js"></script>
-<spline-viewer url="https://prod.spline.design/Hs9lOREdW98wMQ7c/scene.splinecode"></spline-viewer> */}
-
-// <iframe src='https://my.spline.design/untitled-2618df90d4d8efc66aa546f5bb98f5bd/' frameborder='0' width='100%' height='100%'></iframe>

@@ -33,7 +33,11 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      lang="en"
+      className=" h-screen overflow-y-scroll scroll-snap-type-y mandatory"
+      suppressHydrationWarning
+    >
       <body className={outfit.className}>
         {isLoading && isHome ? (
           <SplashScreen

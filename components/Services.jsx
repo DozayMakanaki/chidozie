@@ -44,13 +44,22 @@ const Services = () => {
 
         {/* grid item */}
 
-        <div>
+        <div className="grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
           {serviceData.map((item, index) => {
             return (
-              <Card className='w-full max-w-[420px] h-[300px] flex flex' key={index}>
-                <CardHeader>
-                  <div className="w-[140px] h-[80] bg-green-100 dark:bg-background flex justify-center items-center">{item.icon}</div>
+              <Card
+                className="w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
+                key={index}
+              >
+                <CardHeader className="text-primary absolute -top-[60px]">
+                  <div className="w-[140px] h-[80] bg-white dark:bg-background flex justify-center items-center">
+                    {item.icon}
+                  </div>
                 </CardHeader>
+                <CardContent className=" text-center ">
+                  <CardTitle className="mb-4">{item.title}</CardTitle>
+                  <CardDescription className="text-lg">{item.description}</CardDescription>
+                </CardContent>
               </Card>
             );
           })}

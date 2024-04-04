@@ -1,6 +1,7 @@
 import About from '@/components/About'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
+import Work from '@/components/Work'
 import React from 'react'
 
 const page = () => {
@@ -9,6 +10,7 @@ const page = () => {
         <Hero />
         <About />
         <Services />
+        <Work />
     </div>
   )
 }

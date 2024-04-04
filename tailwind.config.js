@@ -82,6 +82,8 @@ module.exports = {
         hero_shape2_dark: 'url(../public/hero/shape-2-dark.svg)',
         dots_light: 'url(../public/dots-light.svg)',
         dots_dark: 'url(../public/dots-dark.svg)',
+        work_project_bg_light: 'url(../public/work/project-bg-light.png)',
+        work_project_bg_dark: 'url(../public/work/project-bg-dark.png)',
       }
       
     },

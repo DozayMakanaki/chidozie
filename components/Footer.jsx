@@ -3,7 +3,7 @@ import Social from './Social'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className=' bg-secondary py-9 '>
       <div className="container mx-auto ">
         <div className="flex flex-col items-center justify-between ">
           {/* social */}

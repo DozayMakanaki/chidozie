@@ -8,7 +8,7 @@ const page = () => {
         {/* text and illustration */}
         <div>
           <div className="flex flex-col justify-center">
-            <div>
+            <div className='flex items-center gap-x-4 text-primary  '>
               <span className=" w-[30px] h-[2px] bg-primary "></span>
               <div>say hello</div>
             </div>

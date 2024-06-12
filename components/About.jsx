@@ -34,11 +34,11 @@ const containerVars = {
 const infoData = [
   {
     icon: <User2 size={20} />,
-    text: "Dozie Umeodinka",
+    text: "Akaninyene Udeme",
   },
   {
     icon: <PhoneCall size={20} />,
-    text: "+234 80 6634 5068 ",
+    text: "+234 80 ",
   },
   {
     icon: <MailIcon size={20} />,

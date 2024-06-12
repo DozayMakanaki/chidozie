@@ -24,7 +24,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Hero = () => {
   const [typeEffect] = useTypewriter({
-    words: ["Frontend Developer", "UI/UX Designer", "Mathematician"],
+    words: ["Community Manager", "Social Media Manager", "Creative content Creator", "Web3 Event Organizer"],
     loop: {},
     cursor: "|",
     typeSpeed: 100,
@@ -43,8 +43,11 @@ const Hero = () => {
               <Cursor cursorColor="rgb(91, 201, 44)" />
             </div>
             <h1 className="h1 mb-4">
-              <span className="font-light dark:text-gray-400">Hello! I am </span>
-              <br /> Dozie <span className="text-primary">Umeodinka</span>
+              <span className="font-light dark:text-gray-400">
+                Hello! I am{" "}
+              </span>
+              <br /> Akaninyene{" "}
+              <span className="text-primary"> Udeme</span>
             </h1>
 
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
@@ -81,7 +84,7 @@ const Hero = () => {
               containerStyles="absolute top-[80%] -left-[34rem]"
               icon={<RiDatabaseFill />}
               endCountNum={7}
-              endCountText='k'
+              endCountText="k"
               badgeText="Finished Projects"
             />
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2 ">

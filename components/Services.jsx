@@ -17,19 +17,37 @@ import {
 const serviceData = [
   {
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-    title: "UI/UX Design",
+    title: "Social Media Manangement",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum explicabo cumque ipsum quod esse ut molestias, architecto unde natus perferendis alias perspiciatis labore voluptas necessitatibus? Fugiat voluptas eius deleniti",
   },
   {
     icon: <LayoutTemplate size={72} strokeWidth={0.8} />,
-    title: "Frontend Designer",
+    title: "Marketing Analytics",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum explicabo cumque ipsum quod esse ut molestias, architecto unde natus perferendis alias perspiciatis labore voluptas necessitatibus? Fugiat voluptas eius deleniti",
   },
   {
     icon: <Database size={72} strokeWidth={0.8} />,
-    title: "Backend Developer",
+    title: "Marketing",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum explicabo cumque ipsum quod esse ut molestias, architecto unde natus perferendis alias perspiciatis labore voluptas necessitatibus? Fugiat voluptas eius deleniti",
+  },
+  {
+    icon: <Database size={72} strokeWidth={0.8} />,
+    title: "Copywriting",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum explicabo cumque ipsum quod esse ut molestias, architecto unde natus perferendis alias perspiciatis labore voluptas necessitatibus? Fugiat voluptas eius deleniti",
+  },
+  {
+    icon: <Database size={72} strokeWidth={0.8} />,
+    title: "SEO/SEM",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum explicabo cumque ipsum quod esse ut molestias, architecto unde natus perferendis alias perspiciatis labore voluptas necessitatibus? Fugiat voluptas eius deleniti",
+  },
+  {
+    icon: <Database size={72} strokeWidth={0.8} />,
+    title: "Online Presense Monitoring",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum explicabo cumque ipsum quod esse ut molestias, architecto unde natus perferendis alias perspiciatis labore voluptas necessitatibus? Fugiat voluptas eius deleniti",
   },

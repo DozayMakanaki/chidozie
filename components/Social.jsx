@@ -4,8 +4,9 @@ import {
   RiWhatsappFill,
   RiLinkedinFill,
   RiGithubFill,
-  RiTwitterFill,
-  RiInstagramFill,
+  RiDiscordfill,
+  RiRedditFill,
+  RiTwitterXFill,
 } from "react-icons/ri";
 
 import Link from "next/link";
@@ -19,17 +20,17 @@ const icons = [
     path: "/",
     name: <RiLinkedinFill />,
   },
+  // {
+  //   path: "/",
+  //   name: <RiDiscordFill />,
+  // },
   {
     path: "/",
-    name: <RiGithubFill />,
+    name: <RiTwitterXFill />,
   },
   {
     path: "/",
-    name: <RiTwitterFill />,
-  },
-  {
-    path: "/",
-    name: <RiInstagramFill />,
+    name: <RiRedditFill />,
   },
 ];
 

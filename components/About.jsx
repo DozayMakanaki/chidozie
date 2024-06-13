@@ -46,95 +46,78 @@ const infoData = [
   },
   {
     icon: <HomeIcon size={20} />,
-    text: "Lagos, Nigeria",
+    text: "Uyo, Akwa Ibom",
   },
 ];
 
+
+const qualificationData = [
+  {
+    title: "education",
+    data: [
+      {
+        university: "Universitry Of Uyo",
+        qualification: "Bachelor Of Science Economics",
+        years: "2020 to 2024",
+      },
+      {
+        university: "Cousera",
+        qualification: "Certified Social Media Manager",
+        years: "2023 to 2024",
+      },
+    ],
+  },
+  {
+    title: "experience",
+    data: [
+      {
+        company: "FTX Exchange",
+        role: "Ambassador",
+        years: "2021 to 2022",
+      },
+      {
+        company: "Yellow Card",
+        role: "Ambassador",
+        years: "2023 to 2023",
+      },
+      {
+        company: "EOS Nigeria",
+        role: "Moderator",
+        years: "2022 to 2024",
+      },
+    ],
+  },
+];
 
 const skillData = [
   {
-    title: "frontend",
+    title: "skills",
     data: [
       {
-        name: "HTML",
-        imgPath: "/stack/html.svg",
+        name: "Social Media Mangement",
       },
       {
-        name: "CSS",
-        imgPath: "/stack/css.svg",
+        name: "Community Manangement",
       },
-      {
-        name: "JAVASCRIPT",
-        imgPath: "/stack/javascript.svg",
-      },
-      {
-        name: "REACT.JS",
-        imgPath: "/stack/react.svg",
-      },
-      {
-        name: "Next.js",
-        imgPath: "/stack/nextjs.svg",
-      },
-      {
-        name: "Typescript",
-        imgPath: "/stack/typescript.svg",
-      },
-      {
-        name: "TAILWIND",
-        imgPath: "/stack/tailwind.svg",
-      },
-    ],
-  },
 
-  {
-    title: "backend",
-    data: [
       {
-        stack: "NODE.JS",
-        imgPath: "/stack/nodejs.svg",
+        name: "Blockchain and Decentralized Finance Knowledge",
       },
       {
-        stack: "EXPRESS.JS",
-        imgPath: "/stack/express.svg",
+        name: "Ability to Troubleshoot Technical Issues",
       },
       {
-        stack: "PHP",
-        imgPath: "/stack/php.svg",
+        name: "Blockchain and Decentralized Finance Knowledge",
       },
       {
-        stack: "LARAVEL",
-        imgPath: "/stack/laravel.svg",
+        name: "Marketing Analytics",
       },
       {
-        stack: "MONGO.DB",
-        imgPath: "/stack/mongodb.svg",
-      },
-    ],
-  },
-
-  {
-    title: "Software",
-    data: [
-      {
-        software: "VS CODE",
-        imgPath: "/stack/vscode.svg",
-      },
-      {
-        software: "PHOTOSHOP",
-        imgPath: "/stack/photoshop.svg",
-      },
-      {
-        software: "XD",
-        imgPath: "/stack/xd.svg",
-      },
-      {
-        software: "FIGMA",
-        imgPath: "/stack/figma.svg",
+        name: "SEO/SEM",
       },
     ],
   },
 ];
-
 
 const About = () => {
   const getData = (arr, title) => {
@@ -160,19 +143,19 @@ const About = () => {
           </div>
           <div className="flex-1 ">
             <Tabs defaultValue="info">
-              <TabsList className=" grid xl:grid-cols-4 xl:max-w-[540px] ">
+              <TabsList className=" grid xl:grid-cols-2 xl:max-w-[540px] ">
                 <TabsTrigger className="w-[162px] xl:w-auto" value="info">
                   Info
                 </TabsTrigger>
-                <TabsTrigger className="w-[162px] xl:w-auto" value="Frontend">
-                  Frontend
+                <TabsTrigger className="w-[162px] xl:w-auto" value="qualifications">
+                  Qualification
                 </TabsTrigger>
-                <TabsTrigger className="w-[162px] xl:w-auto" value="Backend">
-                  Backend
-                </TabsTrigger>
-                <TabsTrigger className="w-[162px] xl:w-auto" value="Tools">
+                {/* <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
+                  Skills
+                </TabsTrigger> */}
+                {/* <TabsTrigger className="w-[162px] xl:w-auto" value="Tools">
                   Software
-                </TabsTrigger>
+                </TabsTrigger> */}
               </TabsList>
 
               {/* tabs content */}
@@ -219,111 +202,92 @@ const About = () => {
                   </div>
                 </TabsContent>
 
-                <TabsContent value="Frontend">
+                <TabsContent value="qualifications">
                   <div>
-                    <h3 className="h3 nb8 text-center xl:text-left">
-                      Frontend
+                    <h3 className="h3 mb-8 text-center xl:text-left">
+                      My awesome Journey
                     </h3>
-                    {/* frontend */}
-                    <div className="mb-16">
-                      <div className="border-b border-border mb4"></div>
-
-                      {/* frontend  list */}
-                      <div className="grid xl:grid-cols-4 mb-11">
-                        {getData(skillData, "frontend").data.map(
-                          (item, index) => {
-                            const { name, imgPath } = item;
-                            return (
-                              <div
-                                className="w-2/4 text-center xl:text-center mx-auto xl:mx-0 flex items-center p-2"
-                                key={index}
-                              >
-                                <div className="p-2">{name}</div>
-                                <Image
-                                  src={imgPath}
-                                  width={20}
-                                  height={20}
-                                  alt=""
-                                  priority
-                                />
-                              </div>
-                            );
-                          }
-                        )}
+                    {/* experience and qualification wrapper */}
+                    <div className="grid md:grid-cols-2 gap-y-8">
+                      {/* experience */}
+                      <div className="flex flex-col gap-y-6">
+                        <div className="flex gap-x-4 items-center text-{22px} text-primary">
+                          <Briefcase />
+                          <h4 className="capitalize font-medium">
+                            {getData(qualificationData, "experience").title}
+                          </h4>
+                        </div>
+                        {/* list */}
+                        <div className="flex flex-col gap-y-8">
+                          {getData(qualificationData, "experience").data.map(
+                            (item, index) => {
+                              const { company, role, years } = item;
+                              return (
+                                <div className="flex gap-x-8 group" key={index}>
+                                  <div className="h-[84px] w-[1px] bg-border relative ml-2">
+                                    <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
+                                  </div>
+                                  <div>
+                                    <div className=" font-semibold text-xl leading-none mb-2 ">
+                                      {company}
+                                    </div>
+                                    <div className="text-lg leading-none text-muted-foreground mb-4">
+                                      {role}
+                                    </div>
+                                    <div className="text-base font-medium">
+                                      {years}
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            }
+                          )}
+                        </div>
+                      </div>
+                      {/* education */}
+                      <div className="flex flex-col gap-y-8">
+                        <div className="flex gap-x-4 items-center text-{22px} text-primary">
+                          <GraduationCap size={28} />
+                          <h4 className="capitalize font-medium">
+                            {getData(qualificationData, "education").title}
+                          </h4>
+                        </div>
+                        {/* list */}
+                        <div className="flex flex-col gap-y-8">
+                          {getData(qualificationData, "education").data.map(
+                            (item, index) => {
+                              const { university, qualification, years } = item;
+                              return (
+                                <div className="flex gap-x-8 group" key={index}>
+                                  <div className="h-[84px] w-[1px] bg-border relative ml-2">
+                                    <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
+                                  </div>
+                                  <div>
+                                    <div className=" font-semibold text-xl leading-none mb-2 ">
+                                      {university}
+                                    </div>
+                                    <div className="text-lg leading-none text-muted-foreground mb-4">
+                                      {qualification}
+                                    </div>
+                                    <div className="text-base font-medium">
+                                      {years}
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            }
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>
                 </TabsContent>
+                  
+                {/* skills */}
+                {/* <TabsContent value='skills'>
 
-                <TabsContent value="Backend">
-                  <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-8">Backend</h3>
-                    {/* frontend */}
-                    <div className="mb-16">
-                      <div className="border-b border-border mb4"></div>
-
-                      {/* frontend  list */}
-                      <div className="grid xl:grid-cols-4 mb-11">
-                        {getData(skillData, "backend").data.map(
-                          (item, index) => {
-                            const { stack, imgPath } = item;
-                            return (
-                              <div
-                                className="w-2/4 text-center xl:text-center mx-auto xl:mx-0 flex items-center p-2"
-                                key={index}
-                              >
-                                <div className="p-2">{stack}</div>
-                                <Image
-                                  src={imgPath}
-                                  width={20}
-                                  height={20}
-                                  alt=""
-                                  priority
-                                />
-                              </div>
-                            );
-                          }
-                        )}
-                      </div>
-                    </div>
-                  </div>
                 </TabsContent>
-
-                {/* TOOLS */}
-                <TabsContent value="Tools">
-                  <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-8">Softwares</h3>
-
-                    {/* tools */}
-                    <div>
-                      <div className="border-b border-border mb-4"></div>
-
-                      {/* frontend  list */}
-                      <div className="grid xl:grid-cols-4 mb-11">
-                        {getData(skillData, "Software").data.map(
-                          (item, index) => {
-                            const { software, imgPath } = item;
-                            return (
-                              <div
-                                className="w-2/4 text-center xl:text-center mx-auto xl:mx-0 flex items-center p-2"
-                                key={index}
-                              >
-                                <div className="p-2">{software}</div>
-                                <Image
-                                  src={imgPath}
-                                  width={20}
-                                  height={20}
-                                  alt=""
-                                  priority
-                                />
-                              </div>
-                            );
-                          }
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </TabsContent>
+                 */}
               </div>
             </Tabs>
           </div>

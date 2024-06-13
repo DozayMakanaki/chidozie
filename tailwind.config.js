@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -13,7 +13,10 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        sm: "640px",
+        md: "768px",
+      lg: "1024px",
+        xl: "1400px",
       },
     },
     extend: {
@@ -31,9 +34,8 @@ module.exports = {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
-         tertiary: {
+        tertiary: {
           DEFAULT: "hsl(var(--tertiary))",
-        
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -76,17 +78,16 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-        hero: 'url(../public/hero/hero-bg.png)',
-        hero_shape: 'url(../public/hero/shape-1.svg)',
-        hero_shape2_light: 'url(../public/hero/shape-2-light.svg)',
-        hero_shape2_dark: 'url(../public/hero/shape-2-dark.svg)',
-        dots_light: 'url(../public/dots-light.svg)',
-        dots_dark: 'url(../public/dots-dark.svg)',
-        work_project_bg_light: 'url(../public/work/project-bg-light.png)',
-        work_project_bg_dark: 'url(../public/work/project-bg-dark.png)',
-      }
-      
+        hero: "url(../public/hero/hero-bg.png)",
+        hero_shape: "url(../public/hero/shape-1.svg)",
+        hero_shape2_light: "url(../public/hero/shape-2-light.svg)",
+        hero_shape2_dark: "url(../public/hero/shape-2-dark.svg)",
+        dots_light: "url(../public/dots-light.svg)",
+        dots_dark: "url(../public/dots-dark.svg)",
+        work_project_bg_light: "url(../public/work/project-bg-light.png)",
+        work_project_bg_dark: "url(../public/work/project-bg-dark.png)",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

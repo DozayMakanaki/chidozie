@@ -46,13 +46,14 @@ const Hero = () => {
               <span className="font-light dark:text-gray-400">
                 Hello! I am{" "}
               </span>
-              <br /> Akaninyene{" "}
-              <span className="text-primary"> Udeme</span>
+              <br /> Akaninyene <span className="text-primary"> Udeme</span>
             </h1>
 
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              debitis ab, excepturi vel sus
+              My name is Akaninyene Udeme Asuquo, also known as <span className="text-primary"> AKTECH </span> in the
+              tech community and on social media. I'm a young professional
+              passionate about innovation and growth, especially in blockchain
+              technology.
             </p>
             {/* button */}
 

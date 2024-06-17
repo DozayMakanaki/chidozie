@@ -17,39 +17,33 @@ import {
 const serviceData = [
   {
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
+    title: "Community Manangement",
+    description:
+      "As a Community Manager, I build and nurture online blockchain communities. I engage with members, address concerns, and foster a positive environment. I boost engagement, organize events, and create relevant content, ensuring the community feels valued and connected for long-term loyalty and support",
+  },
+  {
+    icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
     title: "Social Media Manangement",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum explicabo cumque ipsum quod esse ut molestias, architecto unde natus perferendis alias perspiciatis labore voluptas necessitatibus? Fugiat voluptas eius deleniti",
-  },
-  {
-    icon: <LayoutTemplate size={72} strokeWidth={0.8} />,
-    title: "Marketing Analytics",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum explicabo cumque ipsum quod esse ut molestias, architecto unde natus perferendis alias perspiciatis labore voluptas necessitatibus? Fugiat voluptas eius deleniti",
+      "As a Social Media Manager, I boost blockchain projects' online presence by creating posts, managing interactions, and analyzing metrics. I use various platforms to communicate updates, grow the audience, and drive engagement.",
   },
   {
     icon: <Database size={72} strokeWidth={0.8} />,
-    title: "Marketing",
+    title: "Graphics Designer",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum explicabo cumque ipsum quod esse ut molestias, architecto unde natus perferendis alias perspiciatis labore voluptas necessitatibus? Fugiat voluptas eius deleniti",
+      "As a Graphics Designer for blockchain projects, I create impactful designs like logos, social media graphics, and promotional materials to convey messages effectively and elevate visual identity.",
   },
   {
     icon: <Database size={72} strokeWidth={0.8} />,
-    title: "Copywriting",
+    title: "Community Moderator",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum explicabo cumque ipsum quod esse ut molestias, architecto unde natus perferendis alias perspiciatis labore voluptas necessitatibus? Fugiat voluptas eius deleniti",
+      "I moderate online discussions, ensuring respect and productivity. I monitor forums, address behavior, support members, and foster a safe environment for active participation.",
   },
   {
     icon: <Database size={72} strokeWidth={0.8} />,
-    title: "SEO/SEM",
+    title: "Ambassador",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum explicabo cumque ipsum quod esse ut molestias, architecto unde natus perferendis alias perspiciatis labore voluptas necessitatibus? Fugiat voluptas eius deleniti",
-  },
-  {
-    icon: <Database size={72} strokeWidth={0.8} />,
-    title: "Online Presense Monitoring",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum explicabo cumque ipsum quod esse ut molestias, architecto unde natus perferendis alias perspiciatis labore voluptas necessitatibus? Fugiat voluptas eius deleniti",
+      "As an Ambassador, I represent blockchain projects, promote their vision, network at events, use social media to spread their message, and build relationships to drive growth and enhance their reputation.",
   },
 ];
 const Services = () => {

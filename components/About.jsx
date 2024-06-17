@@ -147,7 +147,10 @@ const About = () => {
                 <TabsTrigger className="w-[162px] xl:w-auto" value="info">
                   Info
                 </TabsTrigger>
-                <TabsTrigger className="w-[162px] xl:w-auto" value="qualifications">
+                <TabsTrigger
+                  className="w-[162px] xl:w-auto"
+                  value="qualifications"
+                >
                   Qualification
                 </TabsTrigger>
                 {/* <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
@@ -167,9 +170,14 @@ const About = () => {
                       Saepe
                     </h3>
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Commodi quisquam eligendi perferendis. Obcaecati excepturi
-                      at, .
+                      I'm Akaninyene Udeme Asuquo, also known as AKTECH. I'm
+                      passionate about blockchain technology and have dedicated
+                      three years to delivering exceptional results across
+                      various projects. I excel in Community and Social Media
+                      Management, using strategic approaches to grow thriving
+                      online communities. My goal is to push boundaries and
+                      drive innovation in the tech world, especially within
+                      blockchain.
                     </p>
                     {/* icons */}
                     <motion.div
@@ -282,7 +290,7 @@ const About = () => {
                     </div>
                   </div>
                 </TabsContent>
-                  
+
                 {/* skills */}
                 {/* <TabsContent value='skills'>
 

@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
             priority
           />
           <div className="flex gap-x-4">
-            <Link
+            {/* <Link
               href={project.link}
               className=" bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 "
             >
@@ -31,7 +31,7 @@ const ProjectCard = ({ project }) => {
               className=" bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200 "
             >
               <Github className=" text-white " />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </CardHeader>

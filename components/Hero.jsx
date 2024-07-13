@@ -46,7 +46,7 @@ const Hero = () => {
               <span className="font-light dark:text-gray-400">
                 Hello! I am{" "}
               </span>
-              <br /> Akaninyene <span className="text-primary"> Udeme</span>
+              <br /> Dozie <span className="text-primary"> Umeodinka</span>
             </h1>
 
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">

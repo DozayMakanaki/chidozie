@@ -16,77 +16,34 @@ import { Navigation, Pagination, Scrollbar, EffectCards } from "swiper/modules";
 
 const projectData = [
   {
-    image: "/work/3.png",
-    cartegory: "React js",
-    name: "Nexa web",
-    description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea ex",
-    github: "/",
+    image: "/work/3.jpg",
+    cartegory: "Community Moderator",
+    name: "CORAL APP",
+    // description:
+    //   " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea ex",
+    // github: "/",
     link: "/",
   },
   {
-    image: "/work/2.png",
-    cartegory: "React js",
-    name: "Nexa web",
-    description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea ex",
-    github: "/",
+    image: "/work/2.jpg",
+    cartegory: "Community Moderator",
+    name: "ULTRADE",
+    // description:
+    //   " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea ex",
+    // github: "/",
     link: "/",
   },
   {
-    image: "/work/1.png",
-    cartegory: "React js",
-    name: "Nexa web",
-    description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea ex",
-    github: "/",
+    image: "/work/1.jpg",
+    cartegory: "Community Moderator",
+    name: "ASTUT",
+    // description:
+    //   " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea ex",
+    // github: "/",
     link: "/",
   },
-  {
-    image: "/work/4.png",
-    cartegory: "React js",
-    name: "Nexa web",
-    description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea ex",
-    github: "/",
-    link: "/",
-  },
-  {
-    image: "/work/2.png",
-    cartegory: "React js",
-    name: "Nexa web",
-    description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea ex",
-    github: "/",
-    link: "/",
-  },
-  {
-    image: "/work/1.png",
-    cartegory: "React js",
-    name: "Nexa web",
-    description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea ex",
-    github: "/",
-    link: "/",
-  },
-  {
-    image: "/work/3.png",
-    cartegory: "React js",
-    name: "Nexa web",
-    description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea ex",
-    github: "/",
-    link: "/",
-  },
-  {
-    image: "/work/4.png",
-    cartegory: "React js",
-    name: "Nexa web",
-    description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea ex",
-    github: "/",
-    link: "/",
-  },
+  
+ 
 ];
 
 const Work = () => {
@@ -99,14 +56,13 @@ const Work = () => {
           className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] 
         flex flex-col justify-center items-center xl:items-start"
         >
-          <h2 className="section-title mb-4">Latest Package</h2>
+          <h2 className="section-title mb-4">Projects</h2>
           <p className=" subtitle mb-8">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
-            quam commodi dolorem c
+            Here is a few out of many projects i have workd for
           </p>
           <Link href="/projects">
             <Button className="gap-x-2 hover:text-primary hover:bg-slate-100 dark:hover:text-green dark:hover:bg-slate-900">
-              All Projects
+              Projects
             </Button>
           </Link>
         </div>

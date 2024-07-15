@@ -2,6 +2,7 @@
 import React from "react";
 import {
   RiWhatsappFill,
+  RiMailFill,
   RiLinkedinFill,
   RiGithubFill,
   RiDiscordfill,
@@ -13,25 +14,25 @@ import Link from "next/link";
 
 const icons = [
   {
-    path: "/",
+    path: "https://wa.me/+2349056449863",
     name: <RiWhatsappFill />,
   },
   {
     path: "/",
-    name: <RiLinkedinFill />,
+    name: <RiMailFill />,
   },
   // {
   //   path: "/",
   //   name: <RiDiscordFill />,
   // },
-  {
-    path: "/",
-    name: <RiTwitterXFill />,
-  },
-  {
-    path: "/",
-    name: <RiRedditFill />,
-  },
+  // {
+  //   path: "/",
+  //   name: <RiTwitterXFill />,
+  // },
+  // {
+  //   path: "/",
+  //   name: <RiRedditFill />,
+  // },
 ];
 
 const Social = ({ containerStyle, iconsStyles }) => {

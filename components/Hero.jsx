@@ -24,7 +24,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Hero = () => {
   const [typeEffect] = useTypewriter({
-    words: ["Community Manager", "Social Media Manager", "Creative content Creator", "Web3 Event Organizer"],
+    words: ["Community Manager", "Social Media Manager", "Creative content Creator", ],
     loop: {},
     cursor: "|",
     typeSpeed: 100,
@@ -46,19 +46,18 @@ const Hero = () => {
               <span className="font-light dark:text-gray-400">
                 Hello! I am{" "}
               </span>
-              <br /> Dozie <span className="text-primary"> Umeodinka</span>
+              <br /> Josh <span className="text-primary"> Gideon</span>
             </h1>
 
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              My name is Akaninyene Udeme Asuquo, also known as <span className="text-primary"> AKTECH </span> in the
+              My name is Josh Gideon, also known as <span className="text-primary"> Elonjosh</span> in the
               tech community and on social media. I'm a young professional
-              passionate about innovation and growth, especially in blockchain
-              technology.
+              passionate about innovation and growth.
             </p>
             {/* button */}
 
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
-              <Link href="/contact">
+              <Link href="mailto:Joshuagideon901.com ">
                 <Button className="gap-x-2 hover:text-black dark:hover:text-white">
                   Contact me <Send size={17} />
                 </Button>
@@ -74,20 +73,20 @@ const Hero = () => {
           {/* image */}
           <div className="hidden xl:flex relative">
             {/* badeg */}
-            <Badge
+            {/* <Badge
               containerStyles="absolute top-[24%] -left-[13rem]"
               icon={<RiBriefcase4Fill />}
               endCountNum={3}
               badgeText="Years Experience"
-            />
+            /> */}
             {/* badge 2 */}
-            <Badge
+            {/* <Badge
               containerStyles="absolute top-[80%] -left-[34rem]"
               icon={<RiDatabaseFill />}
               endCountNum={7}
               endCountText="k"
               badgeText="Finished Projects"
-            />
+            /> */}
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2 ">
               <Devlmg
                 containerStyles=" w-[510px] h-[462px] bg-no-repeat relative bg-bottom rounded-full overflow-hidden"

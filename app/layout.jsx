@@ -39,18 +39,18 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
     >
       <body className={outfit.className}>
-         {isLoading && isHome ? (
+         {/* {isLoading && isHome ? (
           <SplashScreen
             className="bg-dark-blue"
             finishLoading={finishLoading}
-          />
-        ) : ( 
+          /> */}
+         : ( 
           <ThemeProvider attribute="class" defaultTheme="dark">
             <Header />
             {children}
-            <Footer />
+            {/* <Footer /> */}
           </ThemeProvider>
-        )}
+        )
       </body>
     </html>
   );

@@ -34,19 +34,19 @@ const containerVars = {
 const infoData = [
   {
     icon: <User2 size={20} />,
-    text: "Akaninyene Udeme",
+    text: "Joshua Gideon",
   },
   {
     icon: <PhoneCall size={20} />,
-    text: "+234 80 ",
+    text: "+2349056449863",
   },
   {
     icon: <MailIcon size={20} />,
-    text: "Chidoziemail@gmail.com",
+    text: "Joshuagideon901.com",
   },
   {
     icon: <HomeIcon size={20} />,
-    text: "Uyo, Akwa Ibom",
+    text: "Akwa Ibom, Nigeria",
   },
 ];
 
@@ -56,34 +56,30 @@ const qualificationData = [
     title: "education",
     data: [
       {
-        university: "Universitry Of Uyo",
-        qualification: "Bachelor Of Science Economics",
-        years: "2020 to 2024",
+        university: " University of Uyo",
+        qualification: "Bachelor of Science Education",
+        years: "2019",
       },
-      {
-        university: "Cousera",
-        qualification: "Certified Social Media Manager",
-        years: "2023 to 2024",
-      },
+     
     ],
   },
   {
     title: "experience",
     data: [
       {
-        company: "FTX Exchange",
-        role: "Ambassador",
+        company: "Konomi",
+        role: "Moderator",
         years: "2021 to 2022",
       },
       {
-        company: "Yellow Card",
+        company: "CoinsBit",
         role: "Ambassador",
         years: "2023 to 2023",
       },
       {
-        company: "EOS Nigeria",
+        company: "Ultrade",
         role: "Moderator",
-        years: "2022 to 2024",
+        years: "2022 to 2023",
       },
     ],
   },
@@ -99,22 +95,10 @@ const skillData = [
       {
         name: "Community Manangement",
       },
-
-      {
-        name: "Blockchain and Decentralized Finance Knowledge",
-      },
-      {
-        name: "Ability to Troubleshoot Technical Issues",
-      },
-      {
-        name: "Blockchain and Decentralized Finance Knowledge",
-      },
       {
         name: "Marketing Analytics",
       },
-      {
-        name: "SEO/SEM",
-      },
+      
     ],
   },
 ];
@@ -165,19 +149,13 @@ const About = () => {
               <div className="text-lg mt-12 xl:mt-8">
                 <TabsContent value="info">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-4">
+                    {/* <h3 className="h3 mb-4">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Saepe
-                    </h3>
+                    </h3> */}
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
-                      I'm Akaninyene Udeme Asuquo, also known as AKTECH. I'm
-                      passionate about blockchain technology and have dedicated
-                      three years to delivering exceptional results across
-                      various projects. I excel in Community and Social Media
-                      Management, using strategic approaches to grow thriving
-                      online communities. My goal is to push boundaries and
-                      drive innovation in the tech world, especially within
-                      blockchain.
+                    
+My name is Josh Gideon, also known as Elonjosh in the tech community and on social media. I'm a young professional passionate about innovation and growth. Throughout my journey in the tech industry, I've consistently pushed the boundaries of what's possible, bringing fresh ideas and cutting-edge solutions to the table. My dedication has earned me recognition and a strong following in the tech community. I'm particularly interested in emerging technologies, startups, and disruptive innovations. Beyond my professional pursuits, I actively engage with my audience on social media and tech forums, sharing knowledge and inspiring others.
                     </p>
                     {/* icons */}
                     <motion.div
